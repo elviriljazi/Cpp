@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -9,20 +9,26 @@ int main()
     cin >> m;
     cout << "Jep numrin e rreshtave" << endl;
     cin >> n;
-    int K[m][n];
+    int R[m][m];
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
         {
-            cout << "Jep antarin a" << i + 1 << j + 1 << endl;
-            cin >> K[i][j];
+            if (i == j)
+                R[i][j] = 8;
+            if (i < j)
+                R[i][j] = j + 2;
+            if (i > j)
+                R[i][j] = -4;
         }
-    int P[m];
+    //Printimi i Matrices
     for (int i = 0; i < m; i++)
+    {
         for (int j = 0; j < n; j++)
-            if (i % 2 == 0 || j % 2 == 0)
-                P[i] = K[i][j] + i + j;
-    cout << "P[" << m << "]={";
-    for (int i = 0; i < m; i++)
-        cout << P[i] << ",";
-    cout << "\b}";
+        {
+            cout << setw(5) << R[i][j];
+        }
+        cout << endl;
+    }
+
+    return 0;
 }
