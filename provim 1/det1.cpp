@@ -23,6 +23,6 @@ int main()
                 P[i] = K[i][j] + i + j;
     cout << "P[" << m << "]={";
     for (int i = 0; i < m; i++)
-        cout << P[i] << ",";
-    cout << "\b}";
+        cout << P[i] << " ";
+    cout << "}";
 }

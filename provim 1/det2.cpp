@@ -37,8 +37,8 @@ int main()
     //Printimi i vektorit
     cout<<"B["<<n<<"]={";
     for(int i=0;i<n;i++)
-    cout<<B[i]<<",";
-    cout<<"\b}"<<endl;
+    cout<<B[i]<<" ";
+    cout<<"}"<<endl;
     //Shuma me nenfunksion
     cout<<"Shuma eshte S="<<sum(B,n)<<endl;
     //Prodhimi me nenfunksion
