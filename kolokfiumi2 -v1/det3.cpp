@@ -8,7 +8,7 @@ int absolute(int abs)
     if (abs < 0)
         return -abs;
     else
-    return abs;
+        return abs;
 }
 
 int main()
