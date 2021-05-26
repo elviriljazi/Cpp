@@ -5,8 +5,9 @@ using namespace std;
 
 int absolute(int abs)
 {
-    if (abs < 1)
+    if (abs < 0)
         return -abs;
+    else
     return abs;
 }
 
